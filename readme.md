@@ -1,4 +1,3 @@
-````markdown
 # Security Utilities
 
 A small collection of Python utilities to make day-to-day security / IR work a little easier.  
@@ -38,7 +37,7 @@ Depending on which scripts you use, you will need some or all of:
 
 ```bash
 pip install azure-devops msrest termcolor keyboard pandas openpyxl requests urllib3
-````
+```
 
 * `azure-devops`, `msrest` for ADO access
 * `termcolor`, `keyboard`, `winsound` for the alert assigner UX
@@ -300,10 +299,3 @@ Run it and you will see a printed Python list of unique base domains extracted f
 
 * All of these scripts assume a trusted environment and are provided “as-is”, with no warranty, similar to the license header in `Openjumpbox.py`. 
 * Review each script’s logic and adapt it to your org’s policies before running in production.
-
----
-
-If you add more utilities to this repo later, you can extend this README with a short “Script Overview” section for each new tool.
-
-```
-```
