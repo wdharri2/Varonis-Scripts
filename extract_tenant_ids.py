@@ -53,13 +53,13 @@ def main():
                         unique_values.append(val)
 
 
-    # Output comma-separated list in chunks of at most 15, with a divider between chunks
-    chunk_size = 15
-    for i in range(0, len(unique_values), chunk_size):
-        chunk = unique_values[i:i + chunk_size]
-        print(','.join(chunk))
-        if i + chunk_size < len(unique_values):
-            print('-----')  # divider between chunks
+        # Output comma-separated list in chunks of at most 15, with a divider between chunks
+        chunk_size = 15
+        for i in range(0, len(unique_values), chunk_size):
+            chunk = unique_values[i:i + chunk_size]
+            print(','.join(chunk))
+            if i + chunk_size < len(unique_values):
+                print('-----')  # divider between chunks
 
     except csv.Error as e:
         print(f"Error: Failed to parse CSV: {e}", file=sys.stderr)
